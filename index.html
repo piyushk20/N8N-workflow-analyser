@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>N8N Workflow Analyzer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-primary': '#1A82E2',
+              'brand-secondary': '#6C757D',
+              'brand-background': '#121212',
+              'brand-surface': '#1E1E1E',
+              'brand-text-primary': '#E0E0E0',
+              'brand-text-secondary': '#A0A0A0',
+              'brand-border': '#333333',
+              'brand-success': '#28A745',
+              'brand-warning': '#FFC107',
+              'brand-danger': '#DC3545',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react-dropzone": "https://aistudiocdn.com/react-dropzone@^14.3.8",
+    "lodash": "https://aistudiocdn.com/lodash@^4.17.21"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-background text-brand-text-primary">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

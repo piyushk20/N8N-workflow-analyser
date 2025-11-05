@@ -1,0 +1,5 @@
+{
+  "name": "N8N Workflow Analyzer",
+  "description": "An interactive web application that transforms complex N8N automation workflows into accessible, actionable insights. It analyzes workflow JSON, validates functionality, identifies errors, and presents findings in simple language.",
+  "requestFramePermissions": []
+}
