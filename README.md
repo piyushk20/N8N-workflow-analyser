@@ -1,4 +1,3 @@
-
 # N8N Workflow Analyzer
 
 An intelligent web application powered by the Google Gemini API that analyzes and demystifies N8N automation workflows. It transforms complex workflow JSON into simple explanations, identifies errors, and provides smart, actionable fixes.
@@ -29,6 +28,12 @@ The application follows a simple yet powerful process:
 5.  **Applying Fixes**: The user can review the proposed fixes. Using `lodash`, the application applies the approved modifications to an in-memory copy of the original workflow.
 6.  **Output**: The user can download the newly corrected workflow JSON.
 
+## Project Requirements
+
+-   A modern web browser with JavaScript enabled.
+-   A valid Google Gemini API key. The application is designed to integrate with an environment like Google AI Studio that provides a key selection mechanism.
+-   An N8N workflow in JSON format to be analyzed.
+
 ## Tech Stack
 
 -   **Frontend**: React, TypeScript
@@ -36,6 +41,13 @@ The application follows a simple yet powerful process:
 -   **Styling**: Tailwind CSS for a modern, responsive, and dark-themed UI.
 -   **File Handling**: `react-dropzone` for seamless drag-and-drop file uploads.
 -   **JSON Manipulation**: `lodash` for safely and deeply applying fixes to the workflow object.
+
+## Project Milestones
+
+-   **Milestone 1: Project Setup & Core UI.** Establish the project foundation with React, TypeScript, and Tailwind CSS. Build the main application shell, including the three stages (Input, Analyzing, Results) and the API key selection prompt.
+-   **Milestone 2: Gemini API Integration.** Develop the service to communicate with the Gemini API. This includes crafting the detailed system prompt, defining the response schema for structured output, and handling API calls and errors.
+-   **Milestone 3: Interactive Results & Fix Application.** Build the UI to display the analysis results, including the summary, issues list, and node breakdowns. Implement the logic for users to approve fixes and generate the corrected JSON.
+-   **Milestone 4: Polishing & Documentation.** Refine the user interface, ensure responsiveness, improve accessibility, and write comprehensive project documentation.
 
 ## Project Structure
 
@@ -50,7 +62,8 @@ The application follows a simple yet powerful process:
 │   ├── CodeBlock.tsx     # Component for displaying formatted code with a copy button
 │   └── Icon.tsx          # SVG icon component
 ├── types.ts              # TypeScript interfaces for N8N and the analysis result
-└── README.md             # Project documentation
+├── README.md             # Project documentation
+└── TODO.md               # Implementation plan and task tracking
 ```
 
 ## API Key Requirement
